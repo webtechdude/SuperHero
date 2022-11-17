@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon"
+    href="https://media.istockphoto.com/vectors/super-hero-patriot-man-opening-his-shirt-vector-id1027966368?k=20&m=1027966368&s=612x612&w=0&h=yHsFJOfoI_3KZkiHd2vDc1GPscU6kmf6mT_lI7XCatQ="
+    type="image/png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Superhero Zone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+
+          <button type="button" class="btn-close" style="filter:invert(1)" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body row">
+          <img id="img" src="https://www.superherodb.com/pictures2/portraits/10/100/667.jpg" alt="supimg"
+            class="img-thumbnail col-5">
+          <div id="superherodetails" class="col-7">
+            <h1 class="modal-title fs-3 mb-1" id="superHeroName">Super Hero Name</h1>
+            <h2 class="modal-title fs-5 mb-3" id="superHeroFullName">Super Hero Full Name</h2>
+            <p>Gender: <span id="gender">Male</span></p>
+            <p>Race: <span id="race">Race</span></p>
+          </div>
+          <div id="superheropowerstats" class="col-12">
+            <hr class="border-danger">
+            <h3 class="h3 text-center">Powerstats ⚡</h3>
+            <div class="progress mb-3">
+              <div id="intelligence" class="bg-success progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar" style="width: 90%">Intelligence</div>
+            </div>
+            <div class="progress mb-3">
+              <div id="strength" class="bg-warning progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar" style="width: 70%">Strength</div>
+            </div>
+            <div class="progress mb-3">
+              <div id="speed" class="bg-danger progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar" style="width: 80%">Speed</div>
+            </div>
+            <div class="progress mb-3">
+              <div id="durability" class="bg-black progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar" style="width: 90%">Durability</div>
+            </div>
+            <div class="progress mb-3">
+              <div id="power" class="bg-warning progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar" style="width: 50%">Power</div>
+            </div>
+            <div class="progress">
+              <div id="combat" class="bg-success progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar" style="width: 60%">Combat</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ -->
+
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center sticky-top gap-3">
+    <a class="navbar-brand" href="/">
+      <img src="logo.png" alt="Bootstrap" width="60" height="60">
+    </a>
+
+    <form id="form" class="search-section d-flex" role="search">
+      <input type="search" name="search" class="form-control px-1 me-2 bg-dark text-white-50" id="searchBox">
+      <button class="btn btn-outline-success" type="submit">🔍</button>
+    </form>
+  </nav>
+
+
+  <div id="heroField" class="row container gap-3 mx-auto justify-content-center">
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

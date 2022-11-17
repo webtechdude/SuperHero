@@ -1,0 +1,23 @@
+body {
+    background-color: #2c3033;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.681);
+    transition: transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .card-text {
+    font-family: 'Oxygen Mono', monospace;
+}
+
+#heroField {
+    margin-top: 6rem;
+    font-family: 'Oxygen Mono', monospace;
+}
